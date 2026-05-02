@@ -16,14 +16,14 @@ export default function App() {
   }, []);
 
   async function fetchItems() {
-    const { data } = await supabase.from('your_table_name').select('*').order('name');
+    const { data } = await supabase.from('serums').select('*').order('name');
     setItems(data || []);
   }
 
   async function handleUpdate(e) {
     e.preventDefault();
     const { error } = await supabase
-      .from('your_table_name')
+      .from('serums')
       .update({
         descr: editingItem.descr,
         price: editingItem.price,
