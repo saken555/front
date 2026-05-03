@@ -27,7 +27,7 @@ export default function App() {
       .update({
         descr: editingItem.descr,
         price: editingItem.price,
-        'img-src': editingItem['img_src']
+        'img_src': editingItem['img_src']
       })
       .eq('name', editingItem.name);
 
