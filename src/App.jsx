@@ -138,7 +138,7 @@ export default function App() {
             </div>
             
             <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <label className="block text-xs font-bold uppercase tracking-wider mb-2 text-slate-500">Цена товара (₽)</label>
+              <label className="block text-xs font-bold uppercase tracking-wider mb-2 text-slate-500">Цена товара </label>
               <div className="relative">
                 <input 
                   type="number"
@@ -146,7 +146,7 @@ export default function App() {
                   value={editingItem.price}
                   onChange={e => setEditingItem({...editingItem, price: e.target.value})}
                 />
-                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">RUB</span>
+                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">Тг.</span>
               </div>
             </div>
           </div>
