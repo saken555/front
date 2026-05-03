@@ -124,7 +124,8 @@ export default function App() {
           <div>
             <h3 className="text-3xl font-black text-slate-800 uppercase tracking-tight">Редактирование</h3>
             <p className="text-slate-400 text-sm mt-1 flex items-center gap-2">
-              <span className="bg-slate-100 px-2 py-0.5 rounded border font-mono">{editingItem.name}</span>
+              <h2 className="text-3xl font-black text-slate-800 uppercase tracking-tight">  {editingItem.name}
+</h3>
             </p>
           </div>
           <button type="button" onClick={() => setEditingItem(null)} className="text-gray-300 hover:text-rose-500 text-2xl transition-colors">✕</button>
@@ -146,7 +147,7 @@ export default function App() {
                   value={editingItem.price}
                   onChange={e => setEditingItem({...editingItem, price: e.target.value})}
                 />
-                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">Тг.</span>
+                <span>Тг.</span>
               </div>
             </div>
           </div>
