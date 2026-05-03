@@ -16,7 +16,7 @@ export default function App() {
   }, []);
 
   async function fetchItems() {
-    const { data } = await supabase.from('serums').select('*').order('name');
+    const { data } = await supabase.from('serums').select('*').order('id');
     setItems(data || []);
   }
 
@@ -27,7 +27,7 @@ export default function App() {
       .update({
         descr: editingItem.descr,
         price: editingItem.price,
-        'img-src': editingItem['img-src']
+        'img-src': editingItem['img_src']
       })
       .eq('name', editingItem.name);
 
