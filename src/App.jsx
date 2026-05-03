@@ -76,7 +76,7 @@ export default function App() {
                     {item.descr}
                   </p>
                   <div className="flex justify-between items-center mt-auto">
-                    <span className="font-bold text-blue-600">{item.price} ₽</span>
+                    <span className="font-bold text-blue-600">{item.price} тг.</span>
                     <button 
                       onClick={() => setEditingItem(item)}
                       className="bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1 rounded-md text-sm transition-colors"
@@ -125,7 +125,7 @@ export default function App() {
             <h3 className="text-3xl font-black text-slate-800 uppercase tracking-tight">Редактирование</h3>
             <p className="text-slate-400 text-sm mt-1 flex items-center gap-2">
               <h2 className="text-3xl font-black text-slate-800 uppercase tracking-tight">  {editingItem.name}
-</h3>
+</h2>
             </p>
           </div>
           <button type="button" onClick={() => setEditingItem(null)} className="text-gray-300 hover:text-rose-500 text-2xl transition-colors">✕</button>
