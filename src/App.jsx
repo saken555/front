@@ -122,7 +122,7 @@ export default function App() {
       <div className="p-10">
         <div className="flex justify-between items-start mb-8 border-b pb-4">
           <div>
-            <h1 className="text-3xl font-black text-slate-800 uppercase tracking-tight">Редактирование</h1>
+            {/*  <h1 className="text-3xl font-black text-slate-800 uppercase tracking-tight">Редактирование</h1>  */}
             <p className="text-slate-400 text-sm mt-1 flex items-center gap-2">
               <h2 className="text-3xl font-black text-slate-800 uppercase tracking-tight">  {editingItem.name}
 </h2>
